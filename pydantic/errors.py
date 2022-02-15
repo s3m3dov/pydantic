@@ -629,7 +629,7 @@ class MissingDiscriminator(PydanticValueError):
 class InvalidDiscriminator(PydanticValueError):
     code = 'discriminated_union.invalid_discriminator'
     msg_template = (
-        'No match for discriminator {discriminator_key!r} and value {discriminator_value!r} '
+        'No match for discriminator {discriminator_key!r} and value {discriminator_value!r} ',
         '(allowed values: {allowed_values})'
     )
 
